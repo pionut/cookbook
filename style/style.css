@@ -1,0 +1,639 @@
+/* css resets */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* body */
+body{
+    background-color: #f9f9f9;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #d94e44;
+}
+
+.header h1 {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 4vh; /* if you resize the font size by using browser , it will be 4 viewport height */
+}
+
+/* new recipe */
+
+.s-h-wrapper {
+    width: 100%;
+    height: 60px;
+}
+
+.recipe-container {
+    display: flex; /*display the container in flex */
+    border-bottom: 1px solid #d6d4d4;
+}
+
+.box{
+    height: 70px;
+    min-width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-recipe-btn {
+    border: none;
+    border-right: 1px solid #d6d4d4;
+    color: #db4d3f;
+    font-size: 2.5vh;
+}
+
+.new-recipe-btn:focus {
+    outline: none; /* disable the blue border when the button is clicked */
+}
+
+#select-box {
+    margin-top: 20px;
+    border: 1px solid #d6d4d4;
+    border-radius: 5px;
+    box-sizing: border-box; /* the padding is done inside the box */
+    padding: 5px;
+}
+
+#select-box:focus {
+    outline: none;
+}
+
+#select-box option {
+    font-size: 2vh;
+    border-radius: 5px;
+}
+
+/* main body */
+
+.main-body {
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+.main-body .about-h {
+    width: 1000px;
+    background-color: #d94e44;
+    height: 30px;
+}
+
+.main-body h1 {
+    font-size: 3vh;
+    box-sizing: border-box;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.form-wrap {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.main-body .section {
+    width: 1000px;
+    background-color: #eaeaea;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section .form-wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.form-wrap .box-1 input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-wrap .box-1 textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* box model */
+.box-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box-2 .select {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.select:focus {
+    outline: none;
+}
+
+/* ingredients section */
+
+.ing-section {
+    width: 1000px;
+    background-color: #eaeaea;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.list-wrapp ul li {
+    list-style-type: none;
+    font-size: 2.2vh;
+}
+
+ul#ign li:before {
+    content: "\00BB \0020";
+    color:  #d94e44;
+}
+
+.list-wrapp {
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.qty-wrapp {
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 15px; 
+    height: auto;
+}
+
+.qty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qty-wrapp .qty .box-1 input[type="text"] {
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.box-4 select#unit-select {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+select#unit-select:focus {
+    outline: none;
+}
+
+.box-3 input[type="text"] {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.box-5 button {
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid #d94e44; 
+    background-color: rgb(255, 255, 255);
+}
+
+.box-5 button span {
+    color: #d94e44;
+}
+
+button span {
+    color: #d94e44;
+}
+
+.qty-wrapp {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* steps section */
+
+.steps-section {
+    width: 1000px;
+    background-color: #eaeaea;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.steps-section ul {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.steps-section ul li {
+    list-style-type: none;
+}
+
+/* add step */
+
+.add-steps {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.add-steps form {
+    margin-top: 5px;
+}
+
+.add-steps form textarea {
+    width: 900px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+form button {
+    width: 900px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d94e44;
+}
+
+button:focus {
+    outline: none;
+}
+
+.add-steps form button span {
+    color: #d94e44;
+}
+
+/* save and cancel */
+.save {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.cancel-box button {
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #d94e44;
+}
+
+.cancel-box button span {
+    color: #d94e44;
+}
+
+.save-box button{
+    width: 450px;
+    background-color: #d94e44;
+    border: none;
+    border:1px solid #d94e44;
+    box-sizing: border-box;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+button span {
+    color: rgb(255, 255, 255);
+}
+
+
+/* media queries */
+
+/* 320px portrait and landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    /* header */
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #d94e44;
+        text-align: center;
+    }
+
+    .header h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        margin-right: 10%;
+    }
+
+    /* new recipe */
+    .new-recipe-btn {
+        font-size: 1.2em;
+    }
+
+    #select-box {
+        width: 90%;
+    }
+
+    #select-box option {
+        font-size: 1.1em;
+    }
+
+    /* main body */
+    .main-body {
+        width: 100%
+    }
+
+    .main-body .about-h {
+        width: 100%;
+    }
+
+    .main-body h1 {
+        font-size: 1.2em;
+        margin-left: 2%;
+    }
+
+    .main-body .section {
+        width: 100%;
+    }
+    
+    .section .form-wrap {
+        width: 100%;
+    }
+
+    .form-wrap .box-1 input {
+        width: 100%;
+    }
+
+    .form-wrap .box-1 textarea {
+        width: 100%;
+    }
+
+    /* ingredients section */
+
+    .ing-section {
+        width: 100%;
+    }
+
+    .list-wrapp ul li {
+        font-size: 1.1em;
+    }
+
+    .qty-wrapp {
+        width: 100%;
+    }
+    
+
+    .qty .text {
+        display: none;
+    }
+
+    .box-4 select#unit-select {
+        width: 50px;
+    }
+
+    .box-3 input[type="text"] {
+        width: 100px;
+    }
+
+    .box-5 button {
+        border: 1px solid #d94e44;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    button span {
+        color: #d94e44;
+    }
+    
+
+    /* steps */
+
+    .steps-section {
+        width: 100%;
+    }
+    
+    .steps-section ul {
+        width: 90%;
+        text-align: justify;
+    }
+
+    /* add step */
+
+    .add-steps {
+        width: 100%;
+    }
+
+    .add-steps .red-mobile {
+        color: #d94e44;
+    }
+
+    .add-steps form textarea {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    /* save and cancel buttons */
+    .save {
+        width: 100%; 
+        display: block;
+    }
+    
+    .cancel-box button {
+        width: 100%;
+    }
+
+    .cancel-box button span {
+        color: #d94e44;
+    }
+    
+    .save-box button{
+        width: 100%;
+    }
+    
+}   
+
+/* 500px */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 500px) {
+
+    
+    /* header */
+
+    .header {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 1.3em;
+    }
+
+    /* new recipe */
+
+    .s-h-wrapper {
+        width: 100%;
+    }
+
+    .new-recipe-btn {
+        border: none;
+        border-right: 1px solid #d6d4d4;
+        color: #db4d3f;
+        font-size: 1.2em;
+    }
+
+    #select-box option {
+        font-size: 1em;
+    }
+
+    
+    /* main body */
+
+    .main-body {
+        width: 90%;
+        margin:0 auto;
+        margin-top: 5%;
+    }
+
+    .main-body .about-h {
+        width: 100%;
+    }
+
+    .main-body h1 {
+        font-size: 1.1em;
+        margin-left: 2%;
+    }
+
+    .main-body .section {
+        width: 100%;
+    }
+
+    .section .form-wrap {
+        width: 95%;
+    }
+
+    .form-wrap .box-1 input {
+        width: 100%;
+    }
+
+    .form-wrap .box-1 textarea {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ingredients section */
+
+    .ing-section {
+        width: 100%;
+    }
+
+    .list-wrapp ul li {
+        font-size: 1em;
+    }
+
+    .qty-wrapp {
+        width: 90%;
+    }
+
+    .qty .text {
+        display: none;
+    }
+
+    .qty-wrapp .qty .box-1 input[type="text"] {
+        width: 50px;
+    }
+
+    .box-4 select#unit-select {
+        width: 70px;
+    }
+
+    .box-3 input[type="text"] {
+        width: 150px;
+    }
+
+    /* steps section */
+
+    .steps-section {
+        width: 100%;
+    }
+
+    .steps-section ul {
+        width: 90%;
+        text-align: justify;
+    }
+
+    /* add step */
+
+    .add-steps {
+        width: 90%;
+    }
+
+    .add-steps form textarea {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    /* save and cancel */
+    .save {
+        display: block;
+        width: 100%;
+    }
+
+    .cancel-box button {
+        width: 100%;
+    }
+
+    .cancel-box button span {
+        color: #d94e44;
+    }
+
+    .save-box button{
+        width: 100%;
+    }
+
+}
